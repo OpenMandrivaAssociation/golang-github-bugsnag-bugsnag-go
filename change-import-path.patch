@@ -1,0 +1,26 @@
+From 98f01d2d8d8028816ecbab9a33c445c26ba94ca5 Mon Sep 17 00:00:00 2001
+From: Jan Chaloupka <jchaloup@redhat.com>
+Date: Thu, 8 Oct 2015 22:31:43 +0200
+Subject: [PATCH] change import path
+
+---
+ panicwrap_test.go | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/panicwrap_test.go b/panicwrap_test.go
+index fa8e50b..56769f1 100644
+--- a/panicwrap_test.go
++++ b/panicwrap_test.go
+@@ -3,8 +3,8 @@
+ package bugsnag
+ 
+ import (
++	"bitbucket.org/kardianos/osext"
+ 	"github.com/bitly/go-simplejson"
+-	"github.com/bugsnag/osext"
+ 	"os"
+ 	"os/exec"
+ 	"testing"
+-- 
+1.9.3
+
